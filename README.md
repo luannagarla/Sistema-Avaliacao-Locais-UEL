@@ -31,7 +31,7 @@ Isso irá baixar dependências necessárias para rodar o projeto e em seguida in
 O backend estará disponível em http://localhost:8000/
 
 O que você deve ver ao rodar o backend:
-![alt text](backend.png)
+![alt text](images/backend.png)
 
 #### 2. **Rodar o Front-end (React)**:
 
