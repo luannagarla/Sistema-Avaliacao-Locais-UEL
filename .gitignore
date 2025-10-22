@@ -4,6 +4,9 @@ __pycache__/
 *.pyo
 *.pyd
 *.env          # Variáveis de ambiente (senhas)
+venv/          # Ambiente virtual
+ENV/
+env/
 *.sqlite3
 *.db
 *.log
@@ -21,12 +24,21 @@ yarn-error.log*
 .idea/
 *.sublime-project
 *.sublime-workspace
+*.code-workspace
 
-# === Sistema / Windows ===
+# === Sistema / Windows / Mac ===
 Thumbs.db
 .DS_Store
 *.swp
 
-# === PostgreSQL ===
+# === PostgreSQL / Banco de Dados ===
 *.backup
-*.sql  # se você tiver dumps de DB que não quer subir
+*.sql        # Dumps de DB que não quer subir
+
+# === Logs / Temp ===
+*.tmp
+*.temp
+*.cache
+
+# === Git / Sistema de versionamento ===
+*.orig       # Arquivos de merge
