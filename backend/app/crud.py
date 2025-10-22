@@ -15,7 +15,6 @@ def criar_usuario(nome, email, tipo, curso_nome, departamento):
     conn.close()
     return novo_id
 
-
 def listar_usuarios():
     conn = get_connection()
     cur = conn.cursor()
@@ -24,7 +23,6 @@ def listar_usuarios():
     cur.close()
     conn.close()
     return usuarios
-
 
 # === CRUD LOCAL ===
 def criar_local(nome, descricao, localizacao, categoria, url_image):
@@ -41,7 +39,6 @@ def criar_local(nome, descricao, localizacao, categoria, url_image):
     conn.close()
     return novo_id
 
-
 def listar_locais():
     conn = get_connection()
     cur = conn.cursor()
@@ -50,7 +47,6 @@ def listar_locais():
     cur.close()
     conn.close()
     return locais
-
 
 # === CRUD AVALIAÇÃO ===
 def criar_avaliacao(id_usuario, id_local, nota, data_avaliacao):
@@ -66,7 +62,6 @@ def criar_avaliacao(id_usuario, id_local, nota, data_avaliacao):
     cur.close()
     conn.close()
     return novo_id
-
 
 def listar_avaliacoes():
     conn = get_connection()
