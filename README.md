@@ -1,14 +1,48 @@
 # Sistema-Avaliaco-Locais-UEL
 Sistema de avaliações de locais da UEL
 
-## Rodando o sistema
+## Como rodar o projeto
 
-1- Criar as tabelas no PostgreSQL com o SQL que passei antes.
+#### 1. **Rodar o Back-end (FastAPI)**:
 
-2 - Atualizar database.py com o usuário e senha corretos.
+Pelo terminal, entrar na pasta backend e rodar:
+```bash
+  cd backend
+  python -m venv venv    
+```
+Em seguida,
+```bash
+venv\Scripts\Activate.ps1  
+```
+Em seguida,
+```bash
+  venv\Scripts\activate.bat
+```
+Em seguida,
+```bash
+  pip install -r requirements.txt  
+```
+Por útlimo
+```bash
+  uvicorn main:app --reload  
+```
 
-3 - Instalar psycopg2-binary:
-pip install -r requirements.txt
+Isso irá baixar dependências necessárias para rodar o projeto e em seguida iniciá-lo.
+O backend estará disponível em http://127.0.0.1:8000 
 
-4 - Rodar:
-python app/main.py
+#### 2. **Rodar o Front-end (React)**:
+
+Pelo terminal, entrar na pasta frontend e rodar:
+```bash
+  cd frontend
+  npm install
+  npm install react-router-dom
+```
+Isso irá baixar dependências necessárias para rodar o projeot.
+
+Rodar o React:
+```bash
+   npm start
+```
+O React será aberto em: http://localhost:3000
+Ele se conecta automaticamente com a API do back-end.
